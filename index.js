@@ -56,11 +56,11 @@ function createTimeOutEvent(dateStamp) {
   return this
 }
 
-// function hoursWorkedOnDate(record, date) {
-//   let outHour = record.timeOutEvents.find(element => element.date === date).hour
-//   let inHour = record.timeInEvents.find(element => element.date === date).hour
-//   return (outHour - inHour) /100
-// }
+function hoursWorkedOnDate(record, date) {
+  let outHour = record.timeOutEvents.find(element => element.date === date).hour
+  let inHour = record.timeInEvents.find(element => element.date === date).hour
+  return (outHour - inHour) /100
+}
 
 // function wagesEarnedOnDate(record, date) {
 //   let hours = hoursWorkedOnDate(record, date)
