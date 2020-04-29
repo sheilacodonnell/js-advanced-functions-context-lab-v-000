@@ -68,10 +68,9 @@ function wagesEarnedOnDate(dateStamp) {
 }
 
 
-
-// function calculatePayroll(records) {
-//   return records.reduce((total, employee) => total + allWagesFor(employee), 0)
-// }
+function calculatePayroll() {
+  return this.reduce((total, employee) => total + allWagesFor(employee), 0)
+}
 
 // function findEmployeeByFirstName(srcArray, firstName) {
 //     return srcArray.find(employee => employee.firstName == firstName)
